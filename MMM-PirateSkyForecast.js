@@ -1,8 +1,8 @@
 /*********************************
 
-  Magic Mirror Module:
-  MMM-DarkSkyForecast
-  https://github.com/jclarke0000/MMM-DarkSkyForecast
+  MagicMirror Module:
+  MMM-PirateSkyForecast
+  https://github.com/b-reich/MMM-PirateSkyForecast
 
   Icons in use by this module:
   
@@ -31,14 +31,14 @@
   Some of the icons were modified to better work with the module's
   structure and aesthetic.
 
-  Weather data provided by Dark Sky
+  Weather data provided by Pirate Sky
 
   By Jeff Clarke
   MIT Licensed
 
 *********************************/
 
-Module.register("MMM-DarkSkyForecast", {
+Module.register("MMM-PirateSkyForecast", {
 
   /*
     This module uses the Nunjucks templating system introduced in
@@ -96,11 +96,11 @@ Module.register("MMM-DarkSkyForecast", {
   },
 
   getStyles: function () {
-    return ["MMM-DarkSkyForecast.css"];
+    return ["MMM-PirateSkyForecast.css"];
   },
 
   getTemplate: function () {
-    return "mmm-darksky-forecast.njk";
+    return "MMM-PirateSkyForecast.njk";
   },
 
   /*
@@ -432,7 +432,7 @@ Module.register("MMM-DarkSkyForecast", {
   },
 
   /*
-    Returns the units in use for the data pull from Dark Sky
+    Returns the units in use for the data pull from Pirate Sky
    */
   getUnit: function(metric) {
     return this.units[metric][this.weatherData.flags.units];
@@ -473,11 +473,11 @@ Module.register("MMM-DarkSkyForecast", {
 
   /*
     Icon sets can be added here.  The path is relative to
-    MagicMirror/modules/MMM-DarkSky/icons, and the format
+    MagicMirror/modules/MMM-PirateSkyForecast/icons, and the format
     is specified here so that you can use icons in any format
     that works for you.
 
-    Dark Sky currently specifies one of ten icons for weather
+    Pirate Sky currently specifies one of ten icons for weather
     conditions:
 
       clear-day
@@ -492,7 +492,7 @@ Module.register("MMM-DarkSkyForecast", {
       wind
 
     All of the icon sets below support these ten plus an 
-    additional three in anticipation of Dark Sky enabling
+    additional three in anticipation of Pirate Sky enabling
     a few more:
 
       hail,

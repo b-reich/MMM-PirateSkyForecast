@@ -1,0 +1,248 @@
+.MMM-PirateSkyForecast * {
+  box-sizing: border-box;
+}
+
+.MMM-PirateSkyForecast .module-content {
+  width: 300px;
+}
+
+.MMM-PirateSkyForecast .forecast-container .forecast-item .temperature,
+.MMM-PirateSkyForecast .forecast-container .forecast-item .temperature-container {
+  color: #FFFFFF;
+}
+
+.MMM-PirateSkyForecast .temperature .low-temperature,
+.MMM-PirateSkyForecast .temperature-container .low-temperature {
+  color: #AAA;
+}
+
+.MMM-PirateSkyForecast .wrapper.colored .temperature .high-temperature,
+.MMM-PirateSkyForecast .wrapper.colored .temperature-container .high-temperature {
+  color: #F8DD70;
+}
+
+.MMM-PirateSkyForecast .wrapper.colored .temperature .low-temperature,
+.MMM-PirateSkyForecast .wrapper.colored .temperature-container .low-temperature {
+  color: #6FC4F5;
+}
+
+.MMM-PirateSkyForecast .accumulation:before {
+  content: " ";
+}
+
+.MMM-PirateSkyForecast .attribution {
+  font-size: 10px;
+  line-height: 16px;
+  color: #333;
+  text-align: right;
+}
+
+/* Current Conditions */
+
+.MMM-PirateSkyForecast .current-conditions-wrapper .current.temperature {
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.MMM-PirateSkyForecast .current-conditions-wrapper .icon {
+  vertical-align: middle;
+  line-height: 80px;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+
+.MMM-PirateSkyForecast .extra-current-conditions-wrapper {
+  display: block;
+  /*text-align: left;*/
+  /*background-color: #333;*/
+  word-wrap: normal;
+  margin: 0 -15px;
+}
+
+
+/* Inline icons */
+.MMM-PirateSkyForecast .inline-icon,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .inline-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0px;
+  vertical-align: bottom;
+  position: relative;
+}
+
+
+/* Extra Current Conditions */
+
+.MMM-PirateSkyForecast .extra-current-conditions-wrapper .temperature-container,
+.MMM-PirateSkyForecast .extra-current-conditions-wrapper .precipitation-container,
+.MMM-PirateSkyForecast .extra-current-conditions-wrapper .wind-container {
+  display: inline-block;
+  white-space: nowrap;
+  margin:0 15px;
+  margin-bottom: 10px;
+}
+
+/* Summary */
+
+.MMM-PirateSkyForecast .summary {
+  margin: 15px 0;
+}
+
+
+/* Forecast Header */
+
+.MMM-PirateSkyForecast .module-header.forecast-header {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* ------------ Forecast ------------ */
+
+/* Tiled Layout */
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0 30px;
+  border-top: solid 1px #222;
+}
+
+.MMM-PirateSkyForecast .wrapper.with-forecast-header.tiled .forecast-container {
+  border-top: none;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 100px;
+  padding: 10px 5px 10px 5px;
+  border-bottom: solid 1px #222;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container * {
+  text-align: center;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .time,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .forecast-icon-container,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .forecast-icon,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .temperature,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .temperature-container,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .precipitation-container,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-container,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .day-name {
+  display: block;
+  margin: auto;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .forecast-icon {
+  width: 70px;
+  height: 70px;
+  margin: 4px auto;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .time,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .day-name {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-speed,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-gusts {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-gusts {
+  display: block;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .temperature,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .temperature-container {
+  font-size: 22px;
+  padding: 4px 0;
+}
+
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .precipitation-container,
+.MMM-PirateSkyForecast .wrapper.tiled .forecast-container .forecast-item .wind-container {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ------------ Table Layout ------------ */
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 17px;
+  line-height: 1;
+  border-bottom: solid 1px #222;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item,
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .header-row {
+  display: table-row;
+  border-top: solid 1px #222;
+}
+
+.MMM-PirateSkyForecast .wrapper.with-forecast-header.table .forecast-container > div:first-child,
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .header-row {
+  border-top: none;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .header-row .date-time-header {
+  text-align: left;
+  overflow: visible;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item > span,
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .header-row > span {
+  display: table-cell;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .header-row > span {
+  height: 32px;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  padding-bottom: 2px;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item > span:first-child {
+  text-align: left;
+}
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item > span:last-child {
+  text-align: right;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item .forecast-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  vertical-align: middle;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item .time,
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item  .high-temperature,
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item .low-temperature {
+  white-space: nowrap;
+}
+
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item .wind-gusts,
+.MMM-PirateSkyForecast .wrapper.table .forecast-container .forecast-item .accumulation {
+  display: block;
+  white-space: nowrap;
+}
